@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviator Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <h1>Aviator Game</h1>
+
+        <!-- Balance Display -->
+        <div id="balanceDisplay">
+            <h2 id="balance">Balance: $1000.00</h2>
+        </div>
+
+        <!-- Multiplier and Plane Display -->
+        <div id="multiplierDisplay">
+            <h2>Multiplier: <span id="multiplier">1.0</span>x</h2>
+        </div>
+
+        <!-- Flying Plane -->
+        <div id="planeContainer">
+            <span id="planeEmoji" style="font-size: 40px;">✈️</span>
+        </div>
+
+        <!-- Bet Section -->
+        <div id="bettingSection">
+            <input type="number" id="betAmount" placeholder="Enter Bet Amount" />
+            <button id="placeBetButton">Place Bet</button>
+            <button id="cashoutButton" disabled>Cashout</button>
+        </div>
+
+        <!-- Game Status -->
+        <div id="gameStatus">
+            <p id="statusMessage">Place your bet to start the game.</p>
+        </div>
+
+        <!-- Round Results -->
+        <div id="resultSection">
+            <p id="resultMessage"></p>
+        </div>
+
+        <!-- Round History -->
+        <div id="historySection">
+            <h3>Round History:</h3>
+            <ul id="roundHistory"></ul>
+        </div>
+    </div>
+
+    <!-- Audio Elements for Sounds -->
+    <audio id="planeFlyingSound" src="CHROME Lik Shot.mp3" preload="auto"></audio>
+    <audio id="gameCrashSound" src="ARE YOU SERIOUS .mp3" preload="auto"></audio>
+    <audio id="cashoutSound" src="AKAVUGIRIZO.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
